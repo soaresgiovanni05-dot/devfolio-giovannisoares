@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Exercícios de SQL — Modelagem de Banco de Dados | Giovanni Soares</title>
+  <meta name="description" content="Atividade prática de banco de dados e SQL desenvolvida por Giovanni Bittar Soares na Politec, abordando modelagem relacional DDL e tabelas em MySQL.">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    pre code {
+      font-family: 'Fira Code', 'Courier New', monospace;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .code-window {
+      background: #121f28;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      border: 1px solid #1e3a4b;
+    }
+    .code-header {
+      background: #0b151c;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #1c3342;
+    }
+    .code-dots span {
+      display: inline-block;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+    .dot-red { background: #ff5f56; }
+    .dot-yellow { background: #ffbd2e; }
+    .dot-green { background: #27c93f; }
+  </style>
+</head>
+
+<body class="portfolio-details-page">
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">Giovanni Soares</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Início</a></li>
+          <li><a href="index.html#about">Sobre Mim</a></li>
+          <li><a href="index.html#resume">Trajetória</a></li>
+          <li><a href="index.html#certificates">Certificados</a></li>
+          <li><a href="index.html#portfolio" class="active">Projetos</a></li>
+          <li><a href="index.html#contact">Contato</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header><!-- /Header -->
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Detalhes do Projeto</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="index.html#portfolio">Projetos</a></li>
+            <li class="current">Exercícios de SQL</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="text-center mb-4">
+          <img src="assets/img/portfolio/sql-exercicios.svg" class="img-fluid rounded-4 shadow-sm" style="max-height: 440px; width: 100%; object-fit: contain;" alt="Banner Exercícios SQL">
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-2">
+
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="portfolio-description">
+              <h2>Exercício e Avaliação Prática de SQL — Politec</h2>
+              <p>
+                Esta atividade acadêmica representa uma prática avaliativa na disciplina de <strong>Banco de Dados</strong> realizada no curso Técnico em Informática na <strong>Politec</strong> (arquivo <code>prova_jair.sql</code>).
+              </p>
+              <p>
+                O exercício abrange os conceitos centrais de <strong>DDL (Data Definition Language)</strong> em sistemas gerenciadores de banco de dados relacionais (SGBD MySQL / MariaDB), com foco na estruturação correta de tabelas, escolha de tipos de dados, restrições de integridade e integridade transacional (engine InnoDB).
+              </p>
+
+              <!-- Academic Context Box -->
+              <div class="academic-note-box my-4">
+                <h6 class="fw-bold mb-1"><i class="bi bi-mortarboard-fill text-primary me-2"></i>Atividade Escolar da Politec:</h6>
+                <p class="mb-0 small text-muted">
+                  Este exercício integra as atividades curriculares e avaliações práticas de banco de dados desenvolvidas em sala de aula na Politec. Não representa um sistema completo com funcionalidades inventadas, mas sim a criação rigorosa da estrutura relacional.
+                </p>
+              </div>
+
+              <!-- SQL Code View -->
+              <h4 class="mt-4 mb-3">Script SQL Real Desenvolvido (prova_jair.sql)</h4>
+
+              <div class="code-window mb-4">
+                <div class="code-header">
+                  <div class="code-dots"><span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span></div>
+                  <span class="text-white-50 small">prova_jair.sql — Criação das Tabelas tb_projetos e tb_skill</span>
+                </div>
+                <pre class="p-3 mb-0 text-light"><code>-- Tabela para armazenamento de projetos
+CREATE TABLE tb_projetos (
+    pro_codigo int(11) NOT NULL AUTO_INCREMENT,
+    pro_descricao varchar(200) DEFAULT NULL,
+    pro_foto varchar(250) DEFAULT NULL,
+    pro_status char(1) DEFAULT NULL,
+    pro_data_cadastro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (pro_codigo)
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=latin1;
+
+
+-- Tabela para armazenamento de habilidades (skills)
+CREATE TABLE `tb_skill` (
+    `ski_codigo` int(11) NOT NULL AUTO_INCREMENT,
+    `ski_descricao` varchar(150) DEFAULT NULL,
+    `ski_porcentagem` int(11) DEFAULT NULL,
+    `ski_data_cadastro` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (`ski_codigo`)
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=latin1;</code></pre>
+              </div>
+
+              <h5 class="fw-bold mb-2">Conceitos Técnicos Aplicados no Script:</h5>
+              <ul class="mb-4">
+                <li class="mb-2"><strong>Chave Primária (PRIMARY KEY):</strong> Definição dos campos <code>pro_codigo</code> e <code>ski_codigo</code> como identificadores únicos e não nulos.</li>
+                <li class="mb-2"><strong>Auto Incremento (AUTO_INCREMENT):</strong> Geração sequencial e automática de identificadores para novos registros.</li>
+                <li class="mb-2"><strong>Carimbo Temporal (TIMESTAMP):</strong> Configuração de <code>DEFAULT CURRENT_TIMESTAMP</code> para registrar a data e hora do cadastro de forma automática.</li>
+                <li class="mb-2"><strong>Tipagem de Dados:</strong> Emprego adequado de <code>INT</code>, <code>VARCHAR</code> para textos descritivos e <code>CHAR(1)</code> para controle de status booleano/flags.</li>
+                <li class="mb-2"><strong>Mecanismo de Armazenamento:</strong> Utilização da engine <strong>InnoDB</strong>, que suporta transações seguras (ACID) e integridade referencial.</li>
+              </ul>
+
+              <div class="mt-4 pt-2">
+                <a href="index.html#portfolio" class="btn btn-outline-primary"><i class="bi bi-arrow-left me-1"></i> Voltar para a Lista de Projetos</a>
+                <a href="index.html#contact" class="btn btn-primary ms-2"><i class="bi bi-envelope-fill me-1"></i> Entrar em Contato</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info p-4 rounded-4 shadow-sm bg-white border">
+              <h3 class="border-bottom pb-2 mb-3">Resumo da Atividade</h3>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-3"><strong>Instituição:</strong> <br>Politec</li>
+                <li class="mb-3"><strong>Disciplina:</strong> <br>Banco de Dados Relacional</li>
+                <li class="mb-3"><strong>Linguagem:</strong> <br>SQL (DDL)</li>
+                <li class="mb-3"><strong>SGBD:</strong> <br>MySQL / MariaDB (InnoDB)</li>
+                <li class="mb-3"><strong>Tabelas Criadas:</strong> <br><code>tb_projetos</code>, <code>tb_skill</code></li>
+                <li class="mb-3"><strong>Ambiente:</strong> <br>Atividade Curricular Avaliativa</li>
+                <li><a href="index.html#contact" class="btn btn-primary w-100 text-center"><i class="bi bi-chat-text-fill me-1"></i> Contatar Giovanni</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer accent-background">
+    <div class="container text-center">
+      <p class="mb-2">© <span>Copyright</span> <strong class="px-1 sitename">Giovanni Bittar Soares</strong>. Todos os direitos reservados.</p>
+      <div class="social-links d-flex justify-content-center mb-2">
+        <a href="https://www.instagram.com/giovanni.soares_07/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+        <a href="https://wa.me/5519992044919" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+        <a href="mailto:soaresgiovanni05@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+      <div class="credits">
+        Portfólio Pessoal | Template <a href="https://bootstrapmade.com/">BootstrapMade DevFolio</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

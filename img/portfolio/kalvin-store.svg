@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ksBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121316" />
+      <stop offset="100%" stop-color="#1c1f26" />
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff3b30" />
+      <stop offset="50%" stop-color="#ff9500" />
+      <stop offset="100%" stop-color="#ffcc00" />
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#ksBg)" />
+
+  <!-- Grid lines -->
+  <g opacity="0.06" stroke="#fff" stroke-width="1">
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="450" x2="800" y2="450" />
+    <line x1="200" y1="0" x2="200" y2="600" />
+    <line x1="400" y1="0" x2="400" y2="600" />
+    <line x1="600" y1="0" x2="600" y2="600" />
+  </g>
+
+  <!-- Decorative Tag Graphic -->
+  <rect x="100" y="80" width="600" height="440" rx="20" fill="#181a20" stroke="#2c303c" stroke-width="2" filter="url(#cardShadow)" />
+  
+  <!-- Top Bar -->
+  <rect x="100" y="80" width="600" height="6" fill="url(#accentLine)" rx="3" />
+
+  <!-- Badge -->
+  <rect x="140" y="130" width="180" height="34" rx="17" fill="#ff3b30" fill-opacity="0.15" stroke="#ff3b30" stroke-width="1.5" />
+  <text x="230" y="153" font-family="'Poppins', sans-serif" font-size="13" font-weight="700" fill="#ff5247" text-anchor="middle" letter-spacing="1.5">EXPERIÊNCIA PRÁTICA</text>
+
+  <!-- Streetwear Aesthetic Title -->
+  <text x="140" y="240" font-family="'Raleway', sans-serif" font-size="54" font-weight="900" fill="#ffffff" letter-spacing="4">KALVIN STORE</text>
+  
+  <text x="140" y="290" font-family="'Poppins', sans-serif" font-size="22" font-weight="600" fill="#9ba3b4" letter-spacing="2">SEGMENTO STREETWEAR</text>
+
+  <line x1="140" y1="330" x2="660" y2="330" stroke="#2c303c" stroke-width="1.5" />
+
+  <!-- Description / Meta -->
+  <text x="140" y="380" font-family="'Roboto', sans-serif" font-size="17" fill="#cbd5e1">Projeto desenvolvido para loja de roupas do segmento streetwear.</text>
+  <text x="140" y="415" font-family="'Roboto', sans-serif" font-size="17" fill="#94a3b8">Foco em aplicação prática, presença digital e identidade de marca urbana.</text>
+
+  <!-- Bottom Pills -->
+  <g transform="translate(140, 450)">
+    <rect x="0" y="0" width="120" height="32" rx="8" fill="#242834" />
+    <text x="60" y="21" font-family="'Roboto', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0" text-anchor="middle">Streetwear</text>
+
+    <rect x="130" y="0" width="130" height="32" rx="8" fill="#242834" />
+    <text x="195" y="21" font-family="'Roboto', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0" text-anchor="middle">Moda Urbana</text>
+
+    <rect x="270" y="0" width="160" height="32" rx="8" fill="#242834" />
+    <text x="350" y="21" font-family="'Roboto', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0" text-anchor="middle">Prática Externa</text>
+  </g>
+
+  <!-- Corner Icon -->
+  <g transform="translate(630, 140)" fill="#ff9500" opacity="0.8">
+    <circle cx="20" cy="20" r="18" fill="#ff9500" fill-opacity="0.15" />
+    <path d="M12 20 L28 20 M20 12 L20 28" stroke="#ff9500" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>
